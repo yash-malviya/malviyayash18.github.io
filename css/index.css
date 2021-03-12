@@ -1,0 +1,29 @@
+body {
+    font-family: 'Fira Code', monospace;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+
+}
+
+.item {
+    padding: 10px;
+}
+
+.btn {
+    font-family: inherit;
+    box-shadow: none;
+    border: 1px solid black;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: grey;
+    color: white;
+}
+
+.btn-sm {
+    font-size: 16px;
+}

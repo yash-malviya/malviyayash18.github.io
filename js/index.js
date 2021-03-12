@@ -1,1 +1,3 @@
-// window.alert("Working !!!");
+$("#aboutUsButton").click(function () {
+    location.href = "aboutUs.html"
+});
