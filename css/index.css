@@ -1,15 +1,16 @@
 body {
-    font-family: 'Fira Code', monospace;
+    padding: 0 15px 0 15px;
+    margin: 0;
+    /* font-family: 'Fira Code', monospace; */
+    font-family: 'Poppins',sans-serif;
 }
 
 .container {
-    width: 100%;
     display: flex;
-
 }
 
 .item {
-    padding: 10px;
+    padding: 5px 1rem 5px 0;
 }
 
 .btn {
@@ -27,3 +28,12 @@ body {
 .btn-sm {
     font-size: 16px;
 }
+
+#first-nav {
+    justify-content: space-between;
+    color: #437eeb;
+    border-bottom: 1px solid lightgrey;
+    font-size: 1rem;
+    line-height: 1.68;
+}
+

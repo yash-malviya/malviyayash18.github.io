@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5S9GDP4");
+    </script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="utf-8" />
 
     <title>Digital Analytics</title>
     <meta name="" content="" />
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-5S9GDP4');</script>
-    <!-- End Google Tag Manager -->
+    <script
+      src="https://kit.fontawesome.com/bae1039d17.js"
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i&amp;display=swap&amp;display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
@@ -23,23 +41,43 @@
   </head>
 
   <body>
-
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5S9GDP4"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5S9GDP4"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="container">
-      <div class="item">
-        <button class="btn btn-sm">Login</button>
+    <div id="first-nav" class="container">
+      <div id="first-nav-left" class="container">
+        <div class="item">
+          <i class="fas fa-envelope"></i> support@something.com
+        </div>
+        <div class="item">
+          <i class="fas fa-phone-square-alt"></i> +XD - 9998881230
+        </div>
+        <div class="item">
+          <i class="fas fa-map-marked-alt"></i> 555 - Iceblock, Antarctica
+        </div>
       </div>
-      <div class="item">
-        <button class="btn btn-sm">Sign Up</button>
-      </div>
-      <div class="item">
-        <button id="aboutUsButton" href="https://www.google.com" class="btn btn-sm">About Us
+      <div id="first-nav-right" class="container">
+        <div class="item">
+          <i class="fab fa-facebook-f"></i>
+        </div>
+        <div class="item">
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div class="item">
+          <i class="fab fa-linkedin"></i>
+        </div>
       </div>
     </div>
+
+    <div id="second-nav" class="container"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/index.js"></script>
