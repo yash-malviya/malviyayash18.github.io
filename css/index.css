@@ -1,16 +1,31 @@
 body {
-    padding: 0 15px 0 15px;
     margin: 0;
     /* font-family: 'Fira Code', monospace; */
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .container {
+    height: initial;
     display: flex;
 }
 
 .item {
-    padding: 5px 1rem 5px 0;
+    padding: 0 10px;
 }
 
 .btn {
@@ -30,10 +45,63 @@ body {
 }
 
 #first-nav {
+    align-items: center;
+    padding: 3px 30px;
     justify-content: space-between;
     color: #437eeb;
     border-bottom: 1px solid lightgrey;
     font-size: 1rem;
-    line-height: 1.68;
 }
 
+.item-icon {
+    padding: 3px 5px;
+}
+
+#second-nav {
+    text-align: center;
+    /* align-items: center; */
+    padding: 5px 40px;
+    justify-content: space-between;
+    /* border-bottom: 1px solid lightgrey; */
+}
+
+#logo {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.item-logo {
+    padding: 0;
+}
+
+#logo-main {
+    color: #437eeb;
+    font-size: 30px;
+    font-family: 'Fascinate', cursive;
+}
+
+#logo-sub {
+    letter-spacing: 10px;
+}
+
+.item-cat {
+    padding: 3px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.item-cat:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #437eeb;
+}
+
+#question {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+#full-contact:hover {
+    cursor: pointer;
+    border-bottom: 3px solid #437eeb;
+}
