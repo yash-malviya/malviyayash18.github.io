@@ -3,7 +3,6 @@ body {
   /* font-family: 'Fira Code', monospace; */
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  overflow-y: hidden;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -40,17 +39,13 @@ body {
   color: white;
 }
 
-.btn-sm {
-  font-size: 16px;
-}
-
 #first-nav {
   align-items: center;
   padding: 3px 30px;
   justify-content: space-between;
-  color: #437eeb;
+  color: black;
   border-bottom: 1px solid lightgrey;
-  font-size: 1rem;
+  font-size: 15px;
 }
 
 .item-icon {
@@ -64,8 +59,10 @@ body {
 }
 
 #logo {
+  align-items: center;
   display: flex;
-  flex-flow: column wrap;
+  font-family: 'Kaushan Script', cursive;
+  font-size: 25px;
 }
 
 .item-logo {
@@ -106,14 +103,94 @@ body {
 }
 
 #main-image {
-  width: auto;
+  width: -moz-available;
 }
 
-.body-container {
+#body-container {
   justify-content: space-between;
-  flex-grow: 1;
 }
 
-.main-item {
+#body-right {
   width: 50%;
+  align-items: center;
+}
+
+#body-left {
+  font-family: 'Kaushan Script', cursive;
+  padding-left: 30px;
+  flex-flow: column wrap;
+  width: 50%;
+  justify-content: center;
+}
+
+#da {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 50px;
+}
+
+.btn {
+  margin: 10px 20px;
+  box-shadow: none;
+  border: 1px solid black;
+  /* border-radius: 20px; */
+  color: black;
+  background-color: transparent;
+  padding: 8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  margin-top: 10px;
+}
+
+#body-container-2 {
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.center {
+  margin: auto;
+}
+
+.svg-center {
+  display: block;
+}
+
+.card-pic {
+  width: 50%;
+}
+
+.card-head {
+  padding: 15px 25px;
+  align-items: center;
+  text-align: center;
+}
+
+.card-body {
+  padding: 15px 25px;
+  align-items: center;
+  text-align: center;
+}
+
+.card-container {
+  border-radius: 5px;
+  max-width: 350px;
+  background-color: lightgrey;
+  max-height: 380px;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 30px;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  border-top: 1px solid lightgrey;
+  font-size: 15px;
 }
