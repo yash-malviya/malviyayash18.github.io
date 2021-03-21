@@ -1,5 +1,9 @@
 body {
   margin: 0;
+
+  scrollbar-width: thin;          /* "auto" or "thin" */
+  scrollbar-color: blue orange;   /* scroll thumb and track */
+  /* background-color: lightblue; */
   /* font-family: 'Fira Code', monospace; */
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -16,6 +20,20 @@ body {
   user-select: none;
   /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
+}
+
+body::-webkit-scrollbar {
+  width: 5px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid black;  /* creates padding around scroll thumb */
 }
 
 .container {
@@ -44,7 +62,7 @@ body {
   padding: 3px 30px;
   justify-content: space-between;
   color: black;
-  border-bottom: 1px solid lightgrey;
+  /* border-bottom: 1px solid lwhiteightgrey; */
   font-size: 15px;
 }
 
@@ -107,6 +125,7 @@ body {
 }
 
 #body-container {
+  margin-top: 50px;
   justify-content: space-between;
 }
 
@@ -150,6 +169,7 @@ body {
 }
 
 #body-container-2 {
+  margin-top: 100px;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -199,3 +219,38 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.nav-active {
+  border: 1px;
+  border-bottom: 3px solid #437eeb;
+}
+
+.container-header {
+  widows: 100%;
+  text-align: center;
+  font-family: inherit;
+}
+
+iframe {
+  box-shadow: rgb(38, 57, 77) -20px 20px 50px -5px;
+}
+
+.video-right {
+  width: 50%;
+  padding: 20px;
+}
+
+.video-left {
+  width: 50%;
+}
+
+#body-container-3 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#product-video-text {
+  text-align: center;
+}
+
