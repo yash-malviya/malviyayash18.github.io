@@ -1,107 +1,119 @@
 body {
-    margin: 0;
-    /* font-family: 'Fira Code', monospace; */
-    font-family: 'Poppins', sans-serif;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    -webkit-touch-callout: none;
-    /* iOS Safari */
-    -webkit-user-select: none;
-    /* Safari */
-    -khtml-user-select: none;
-    /* Konqueror HTML */
-    -moz-user-select: none;
-    /* Old versions of Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
+  margin: 0;
+  /* font-family: 'Fira Code', monospace; */
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
 .container {
-    height: initial;
-    display: flex;
+  height: initial;
+  display: flex;
 }
 
 .item {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 .btn {
-    font-family: inherit;
-    box-shadow: none;
-    border: 1px solid black;
+  font-family: inherit;
+  box-shadow: none;
+  border: 1px solid black;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-color: grey;
-    color: white;
+  cursor: pointer;
+  background-color: grey;
+  color: white;
 }
 
 .btn-sm {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 #first-nav {
-    align-items: center;
-    padding: 3px 30px;
-    justify-content: space-between;
-    color: #437eeb;
-    border-bottom: 1px solid lightgrey;
-    font-size: 1rem;
+  align-items: center;
+  padding: 3px 30px;
+  justify-content: space-between;
+  color: #437eeb;
+  border-bottom: 1px solid lightgrey;
+  font-size: 1rem;
 }
 
 .item-icon {
-    padding: 3px 5px;
+  padding: 3px 5px;
 }
 
 #second-nav {
-    text-align: center;
-    /* align-items: center; */
-    padding: 5px 40px;
-    justify-content: space-between;
-    /* border-bottom: 1px solid lightgrey; */
+  text-align: center;
+  padding: 5px 40px;
+  justify-content: space-between;
 }
 
 #logo {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .item-logo {
-    padding: 0;
+  padding: 0;
 }
 
 #logo-main {
-    color: #437eeb;
-    font-size: 30px;
-    font-family: 'Fascinate', cursive;
+  color: #437eeb;
+  font-size: 20px;
+  font-family: "Fascinate", cursive;
 }
 
 #logo-sub {
-    letter-spacing: 10px;
+  letter-spacing: 10px;
 }
 
 .item-cat {
-    padding: 3px 20px;
-    display: flex;
-    align-items: center;
+  font-size: 15px;
+  padding: 3px 20px;
+  display: flex;
+  align-items: center;
 }
 
 .item-cat:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #437eeb;
+  cursor: pointer;
+  border-bottom: 3px solid #437eeb;
 }
 
 #question {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 #full-contact:hover {
-    cursor: pointer;
-    border-bottom: 3px solid #437eeb;
+  cursor: pointer;
+  border-bottom: 3px solid #437eeb;
+}
+
+#main-image {
+  width: auto;
+}
+
+.body-container {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.main-item {
+  width: 50%;
 }
