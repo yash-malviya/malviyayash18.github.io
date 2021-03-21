@@ -194,3 +194,8 @@ body {
   border-top: 1px solid lightgrey;
   font-size: 15px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
