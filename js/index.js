@@ -32,7 +32,9 @@ var exitTime;
 $('document').ready(function () {
 
     visitTime = new Date();
+    sessionStorage.setItem('visitTime', visitTime);
     getCountry();
+    getPageLang();
 
     //  Check for data in session storage. (same session)
 
@@ -71,20 +73,20 @@ function recordExitTime() {
 
 function getPageLang() {
     var lang = document.documentElement.lang;
+    sessionStorage.setItem('language', lang);
     console.log(lang);
     return lang;
 }
 
 function getCountry() {
-    $.ajax('http://ip-api.com/json')
-        .then(
-            function success(response) {
-                console.log(response.country);
-            },
-
-            function fail(data, status) {
-                console.log("Failed ;(");
-            }
-        );
+    fetch('https://extreme-ip-lookup.com/json/')
+        .then(res => res.json())
+        .then(response => {
+            sessionStorage.setItem('country', response.country);
+            console.log("Country : ", response.country);
+        })
+        .catch((data, status) => {
+            console.log('Failed :(');
+        })
 }
 
