@@ -19,7 +19,7 @@ document.querySelectorAll("#second-nav-middle div.item-cat:nth-child(1)")[0].add
 });
 
 
-// Test Code for https://onlineprograms.sacredheart.edu/
+// Test Code for 
 
 window.addEventListener('beforeunload', recordExitTime);
 
